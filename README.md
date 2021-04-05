@@ -1,9 +1,8 @@
 # Custom checkbox tree
 
 ## Show DEMO
-```
-https://sufferingonion.github.io/Custom_checkbox_tree/
-```
+
+See [DEMO](https://sufferingonion.github.io/Custom_checkbox_tree/)
 
 ## Project setup
 ```
