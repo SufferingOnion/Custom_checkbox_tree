@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <vue-form/>
+    <vue-form  @senddata="acceptData"/>
+    <p>
+      {{ checkboxData }}
+    </p>
   </div>
 </template>
 
@@ -9,6 +12,16 @@ import VueForm from './components/VueForm.vue'
 
 export default {
   name: 'App',
+  data(){
+    return {
+      checkboxData: null,
+    }
+  },
+  methods: {
+    acceptData(payload){
+      this.checkboxData = payload
+    }
+  },
   components: {
     'vue-form': VueForm
   }

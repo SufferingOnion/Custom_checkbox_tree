@@ -1,5 +1,10 @@
 <template>
-  <vue-checkbox :item='rootItem'></vue-checkbox>
+  <div>
+    <vue-checkbox :item='rootItem'></vue-checkbox>
+    <button @click="SendData">
+      Отправить родителю
+    </button>
+  </div>
 </template>
 
 <script>
@@ -43,6 +48,11 @@ export default {
           ]
         }]
       }
+    }
+  },
+  methods: {
+    SendData(){
+      this.$emit( 'senddata', this.rootItem)
     }
   },
   components: {
