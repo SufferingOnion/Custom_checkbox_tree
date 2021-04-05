@@ -1,3 +1,9 @@
 module.exports = {
-  runtimeCompiler: true
+  runtimeCompiler: true,
+  outputDir: 'docs',
+
+  css: {
+    modules: true,
+    sourceMap: true
+  }
 }
