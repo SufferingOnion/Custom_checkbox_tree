@@ -1,6 +1,6 @@
 module.exports = {
   runtimeCompiler: true,
-  publicPath: '/docs/',
+  publicPath: '/Custom_checkbox_tree/',
   outputDir: 'docs',
 
   css: {
